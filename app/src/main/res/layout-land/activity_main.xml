@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.freebsdgr.epal_exams.MainActivity"
+    android:background="@color/highlighted_text_material_dark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Μαθηματικά"
+        android:id="@+id/math_textView"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:singleLine="true"
+        android:ems="10"
+        android:id="@+id/math_editText"
+        android:text="100"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:layout_below="@+id/math_textView"
+        android:layout_alignLeft="@+id/math_textView"
+        android:layout_alignStart="@+id/math_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Νέα Ελληνικά"
+        android:id="@+id/nea_textView"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@id/nea_editText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/nea_editText"
+        android:text="100"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:singleLine="true"
+        android:layout_below="@+id/nea_textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ειδικότητα 1"
+        android:id="@+id/eid1_textView"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/math_editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:singleLine="true"
+        android:ems="10"
+        android:id="@+id/eid1_editText"
+        android:text="100"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:layout_below="@+id/eid1_textView"
+        android:layout_alignLeft="@+id/math_editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ειδικότητα 2"
+        android:id="@+id/eid2_textView"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignTop="@+id/eid1_textView"
+        android:layout_alignLeft="@id/nea_textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:singleLine="true"
+        android:ems="10"
+        android:id="@+id/eid2_editText"
+        android:text="100"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:layout_below="@+id/eid2_textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ειδικό Μάθημα"
+        android:id="@+id/eidiko_textView"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/eid1_editText"
+        android:layout_alignLeft="@+id/math_editText"
+        android:layout_alignStart="@+id/math_editText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:singleLine="true"
+        android:ems="10"
+        android:id="@+id/eidiko_editText"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:layout_below="@+id/eidiko_textView"
+        android:layout_alignLeft="@+id/eidiko_textView"
+        android:layout_alignStart="@+id/eidiko_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Μόρια:"
+        android:id="@+id/moria_textView"
+        android:textColor="@color/abc_btn_colored_borderless_text_material"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/eid1_editText"
+        android:layout_toEndOf="@+id/eid1_editText" />
+
+    <TextView
+        android:id="@+id/result_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/moria_textView"
+        android:layout_marginEnd="203dp"
+        android:text="10000"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/abc_btn_colored_borderless_text_material" />
+</RelativeLayout>
